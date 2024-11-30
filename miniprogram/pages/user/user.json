@@ -1,0 +1,13 @@
+{
+  "component": true,
+  "usingComponents": {
+    "van-notice-bar": "/components/vant-weapp/notice-bar/index",
+    "van-tab": "/components/vant-weapp/tab/index",
+    "van-tabs": "/components/vant-weapp/tabs/index",
+    "van-button": "/components/vant-weapp/button/index",
+    "van-icon": "/components/vant-weapp/icon/index"
+  },
+  "navigationBarTextStyle": "black",
+  "backgroundColor": "#F6F6F6",
+  "navigationBarTitleText": "个人"
+}

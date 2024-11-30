@@ -1,0 +1,224 @@
+page{
+  background: -webkit-linear-gradient(top,#fff2f3,#ffffff,#ffffff);
+}
+
+
+ /* 框框 */
+ .box {
+  height: 10%;
+  border: 2rpx solid #99999940;
+  background-color: #ffffff;
+  border-radius: 20rpx;
+  margin: 4% auto;
+  position: relative;
+  width: 94%;
+}
+.text{
+  margin: 25rpx 25rpx 25rpx 35rpx;
+}
+
+/* 标题 */
+.title {
+  font-size: 19px;
+  font-weight: 600;
+  margin-left: 3%;
+  margin-top: 2%;
+  margin-bottom: 4%;
+  margin-right: 2%;
+}
+
+/* 信息 */
+.detail{
+  margin-top: 2%;
+  margin-left: 4%;
+  margin-bottom: 4%;
+  display: flex;
+  flex-direction: column;
+  color: grey;
+  font-size: 13.5px;
+  margin-right: 4%;
+}
+/* 顶栏 */
+.top-bar {
+  position: relative;
+  padding: 4px 10px;
+  display: flex;
+ }
+/* 搜索 */
+.search {
+  flex: auto;
+  border-radius: 50px;
+  background: #FFFFFF;
+  border: 2rpx solid #99999940;
+  height: 60rpx;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search text{
+  color: grey;
+  font-size: 28rpx;
+}
+/* 发布 */
+.publish{
+  background-color: #F88B98;
+  color: white;
+  border-radius: 50px;
+  margin-left: 3%;
+  width: 20%;
+  font-size: 30rpx !important;
+}
+
+/* 导航栏 */
+.scroll-bar {
+  width: 100%;
+  height: 90rpx;
+  white-space: nowrap;
+  display: flex;
+  box-sizing: border-box;
+  border-bottom: 1rpx solid #eee;
+  background: #fff;
+  align-items: center;
+}
+/* 导航栏每一项 */
+.scroll-item {
+  padding-left: 25rpx;
+  padding-right: 25rpx;
+  height: 100%;
+  display: inline-block;
+  font-size: 28rpx;
+}
+/* 导航栏文字 */
+.scroll-text {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 4rpx;
+  box-sizing: border-box;
+}
+/* 导航栏文字选中 */
+.scroll-on {
+  color: #F88B98;
+  font-size: 35rpx !important;
+  font-weight: 600;
+  border-bottom: 4rpx solid #F88B98 !important;
+}
+
+/* 分类滑动 */
+.swiper-nav{
+  white-space: nowrap;
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+.swiper-nav .item-nav{
+  position: relative;
+  padding: 20rpx 20rpx 20rpx;
+  color: #999;
+  font-size: 30rpx;
+  cursor: pointer;
+  display: inline-block;
+}
+.swiper-nav .active{
+  color:#F88B98; 
+  font-weight: 600;
+}
+.swiper-nav .active::after{
+  content:'';
+  position: absolute;
+  left: 32rpx;
+  right: 32rpx;
+  height:0;
+  border-radius: 4rpx;
+  bottom: 18rpx;
+  font-weight: 600;
+}
+
+/* 框框 */
+.task-center,
+.text-serve,
+.fleamarket{
+  /* display: flex; */
+  flex-direction: row;
+  margin: 20rpx;
+  text-align: left;
+  padding: 20rpx;
+  border-radius: 15rpx;
+  letter-spacing: 3rpx;
+  background-color: white;
+}
+.fleamarket-num{ 
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.task-center{
+  /* margin-top: -60rpx; */
+  margin-bottom: 40rpx;
+}
+
+/* 每个标题 */
+.text{
+  display: flex;
+  padding: 4rpx;
+  font-size: 30rpx;
+  line-height: 1.5;
+  font-weight: 550;
+}
+.cell{
+  flex: 1;
+  padding-top: 46rpx;
+  font-size: 25rpx;
+  color: #333;
+}
+.text{
+  padding: 10rpx 0 0 0;
+  margin-left: 30rpx;
+}
+
+/*列表*/
+.user-publish{
+  border-right: 1rpx solid black;
+  padding-left: 80rpx;
+  padding-right: 110rpx;
+  margin: 20rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color: #333;
+}
+.user-take{
+  padding-left: 70rpx;
+  margin: 20rpx;
+  font-size: 30rpx;
+  color: #333;
+}
+.user-sell{
+  border-right: 1rpx solid black;
+  padding-left: 20rpx;
+  padding-right: 45rpx;
+  margin: 20rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color: #333;
+}
+.user-buy{
+  border-right: 1rpx solid black;
+  padding-left: 20rpx;
+  padding-right: 55rpx;
+  margin: 20rpx;
+  font-size: 30rpx;
+  color: #333;
+}
+.user-iWant{
+  padding-left: 18rpx;
+  margin: 20rpx;
+  font-size: 30rpx;
+  color: #333;
+}
+.num{
+  text-align: center;
+  font-size: 50rpx;
+  font-weight: 500;
+  color: #F88B98;
+}

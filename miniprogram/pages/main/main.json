@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+    "qiun-wx-ucharts": "/components/qiun-wx-ucharts/index"
+  },
+  "enablePullDownRefresh": false,
+  "navigationBarTitleText": "宠物箱"
+}

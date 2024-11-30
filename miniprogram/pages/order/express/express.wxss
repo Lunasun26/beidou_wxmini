@@ -1,0 +1,40 @@
+page{
+  background: white
+}
+
+.weui-cell_hd
+{
+ display: flex; 
+ align-items: center; 
+ margin: 0 45rpx;
+ background-color:#d3d2d21a;
+ border-radius: 20rpx; 
+ margin-top: 20rpx; 
+ margin-bottom: 30rpx;
+ padding: 30rpx 40rpx;
+ font-size: 15px;
+}
+.weui-label{
+ width: 140rpx;
+ font-weight: 550;
+}
+
+.page_bd_spacing_submit{
+  margin-top: 40rpx;
+}
+.page_bd_spacing_submit button{
+  background: -webkit-linear-gradient(right,#f1b5bc,#f59aa5);
+  color: white;
+  border-radius: 50rpx;
+  font-size: 16px;
+}
+
+.text{
+  margin-left: 5%;
+  display: flex;
+  padding: 4rpx;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 550;
+  color: #F88B98;
+}

@@ -1,0 +1,140 @@
+page{
+  background: -webkit-linear-gradient(top,#fff2f3,#ffffff,#ffffff);
+}
+
+.noLoginButton button{
+  background-color: #F88B98;
+  color: white;
+  border-radius: 50rpx;
+  margin-top: 4%;
+  width: 230rpx !important;
+}
+.noLoginText{
+  margin:0 auto;
+  margin-top: 55%;
+  font-size: 16px;
+  color: #949292;
+}
+.text-center{
+  padding: 70rpx 0 10rpx 0;
+}
+.user-img{
+  justify-content: center;
+  display: flex;
+  width: 130rpx;  
+  height: 130rpx;    
+  border-radius: 50%; 
+  overflow: hidden; 
+  margin: 0 auto;
+  border: 2px solid #cccccc30;  
+}
+.user-img image{
+  width: 130rpx;  
+  height: 130rpx;
+}
+.user-name{
+  justify-content: center;
+  display: flex; 
+  height: 70rpx;    
+  color: black;
+  font-size: 30rpx;
+  margin-top: 2%;
+}
+
+/* 框框 */
+.task-center,
+.text-serve,
+.fleamarket{
+  /* display: flex; */
+  flex-direction: row;
+  margin: 20rpx;
+  text-align: left;
+  padding: 20rpx;
+  border-radius: 15rpx;
+  letter-spacing: 3rpx;
+  background-color: white;
+}
+.fleamarket-num{ 
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.task-center{
+  /* margin-top: -60rpx; */
+  margin-bottom: 40rpx;
+}
+
+/* 每个标题 */
+.text{
+  display: flex;
+  padding: 4rpx;
+  font-size: 30rpx;
+  line-height: 1.5;
+  font-weight: 550;
+}
+.cell{
+  flex: 1;
+  padding-top: 46rpx;
+  font-size: 25rpx;
+  color: #333;
+}
+.text{
+  padding: 10rpx 0 0 0;
+  margin-left: 30rpx;
+}
+
+/*列表*/
+.user-publish{
+  border-right: 1rpx solid black;
+  padding-left: 80rpx;
+  padding-right: 110rpx;
+  margin: 20rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color: #333;
+}
+.user-take{
+  padding-left: 70rpx;
+  margin: 20rpx;
+  font-size: 30rpx;
+  color: #333;
+}
+.user-sell{
+  border-right: 1rpx solid black;
+  padding-left: 20rpx;
+  padding-right: 45rpx;
+  margin: 20rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color: #333;
+}
+.user-buy{
+  border-right: 1rpx solid black;
+  padding-left: 20rpx;
+  padding-right: 55rpx;
+  margin: 20rpx;
+  font-size: 30rpx;
+  color: #333;
+}
+.user-iWant{
+  padding-left: 18rpx;
+  margin: 20rpx;
+  font-size: 30rpx;
+  color: #333;
+}
+.num{
+  text-align: center;
+  font-size: 50rpx;
+  font-weight: 500;
+  color: #F88B98;
+}
+/* 工具与服务 */
+.serve{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.icon{
+  width: 50rpx;
+  height: 50rpx;
+}

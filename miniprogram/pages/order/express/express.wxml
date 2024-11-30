@@ -1,0 +1,115 @@
+
+<view style="padding: 15rpx;"></view> 
+
+<view class="weui-cells weui-cells_after-title">
+
+  <text class="text">寄箱人信息</text>
+
+  <view class="weui-cell weui-cell_input">
+    <view class="weui-cell_hd">
+      <view class="weui-label">姓名</view>
+      <input class="weui-input" placeholder="请输入寄箱人姓名" bindchange="changeName"/>
+    </view>
+  </view>
+
+  <view class="weui-cell weui-cell_input">
+    <view class="weui-cell_hd">
+      <view class="weui-label">电话</view>
+      <input class="weui-input" placeholder="请输入寄箱人电话号码" bindchange="changeNum" type="number"/>
+    </view>
+  </view>
+
+  <view class="weui-cell weui-cell_input">
+    <view class="weui-cell_hd">
+      <view class="weui-label">地址</view>
+      <input class="weui-input" placeholder="请输入寄箱人地址" bindchange="changeNum" type="number"/>
+    </view>
+  </view>
+
+  <text class="text">收箱人信息</text>
+
+  <view class="weui-cell weui-cell_input">
+    <view class="weui-cell_hd">
+      <view class="weui-label">姓名</view>
+      <input class="weui-input" placeholder="请输入收箱人姓名" bindchange="changeName"/>
+    </view>
+  </view>
+
+  <view class="weui-cell weui-cell_input">
+    <view class="weui-cell_hd">
+      <view class="weui-label">电话</view>
+      <input class="weui-input" placeholder="请输入收箱人电话号码" bindchange="changeNum" type="number"/>
+    </view>
+  </view>
+
+  <view class="weui-cell weui-cell_input">
+    <view class="weui-cell_hd">
+      <view class="weui-label">地址</view>
+      <input class="weui-input" placeholder="请输入收箱人地址" bindchange="changeNum" type="number"/>
+    </view>
+  </view>
+
+  <text class="text">宠物信息</text>
+
+  <view class="weui-cell weui-cell_input">
+    <view class="weui-cell_hd">
+      <view class="weui-label">类型</view> 
+      <radio-group bindchange="animal1" style="width: 80%; margin-left: 1%;">
+       <view>
+        <label class="radio">
+          <radio value="dog" color="#F88B98"/>狗
+        </label>
+        <label class="radio" style="margin-left: 8%;">
+          <radio value="cat" color="#F88B98"/>猫
+        </label>
+        <label class="radio" style="margin-left: 8%;">
+          <radio value="rabbit" color="#F88B98"/>兔
+        </label>
+      </view> 
+      <view style="margin-top:5%">
+        <label class="radio">
+          <radio value="bindconfirm" color="#F88B98"/>鸟
+        </label>
+        <label class="radio" style="margin-left: 8%;">
+          <radio value="mouse" color="#F88B98"/>鼠
+        </label>
+        <label class="radio" style="margin-left: 8%;">
+          <radio value="other" color="#F88B98"/>其它
+        </label>
+      </view> 
+      </radio-group>
+    </view>
+
+    <view class="weui-cell weui-cell_input">
+    <view class="weui-cell_hd">
+      <view class="weui-label">品种</view>
+      <input class="weui-input" placeholder="请输入宠物品种" bindchange="changeNum" type="number"/>
+    </view>
+  </view>
+
+  <view class="weui-cell weui-cell_input">
+    <view class="weui-cell_hd">
+      <view class="weui-label">照片</view>
+      <view style="border-radius: 20rpx; background-color: white; margin: 20rpx 20rpx; display: flex;">
+        <button wx:if="{{chooseImgs.length<1}}" bindtap="handleChooseImg">+ 添加图片</button>
+        <button wx:else bindtap="handleRemoveImg">- 删除图片</button>
+      </view>
+    </view>
+  </view>
+
+    <view class="weui-cell weui-cell_input">
+    <view class="weui-cell_hd">
+      <view class="weui-label">备注</view>
+      <input class="weui-input" placeholder="请输入备注或要求" bindchange="changeNum" type="number"/>
+    </view>
+  </view>
+
+  </view>
+</view>
+
+<view wx:if="{{chooseImgs.length!=0}}"><image src="{{chooseImgs}}" style="width:450rpx; height:450rpx;margin-left: 20%;"  mode="aspectFill"></image></view>
+
+<view class="page_bd_spacing_submit" >
+  <button class="weui-btn" bindtap="bindSubmit" >确认下单</button>
+</view>
+<view style="padding: 100rpx;"></view>

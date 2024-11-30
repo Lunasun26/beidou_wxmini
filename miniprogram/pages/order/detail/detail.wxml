@@ -1,0 +1,82 @@
+<map class="box"  latitude="22.532742"  longitude= "113.936696"  polyline="{{polyline}}"></map>
+
+<view class="status">正在派箱中</view>
+
+<view style="padding: 15rpx;"></view> 
+
+<view class="weui-cells weui-cells_after-title">
+
+  <text class="text">寄箱人信息</text>
+
+  <view class="weui-cell weui-cell_input">
+    <view class="weui-cell_hd">
+      <view class="weui-label">姓名</view>
+      黄阳阳
+    </view>
+  </view>
+
+  <view class="weui-cell weui-cell_input">
+    <view class="weui-cell_hd">
+      <view class="weui-label">电话</view>
+    1234567890
+    </view>
+  </view>
+
+  <view class="weui-cell weui-cell_input">
+    <view class="weui-cell_hd">
+      <view class="weui-label">地址</view>
+      广东省佛山市三水区广州工商学院
+    </view>
+  </view>
+
+  <text class="text">收箱人信息</text>
+
+  <view class="weui-cell weui-cell_input">
+    <view class="weui-cell_hd">
+      <view class="weui-label">姓名</view>
+     孙鑫鑫
+    </view>
+  </view>
+
+  <view class="weui-cell weui-cell_input">
+    <view class="weui-cell_hd">
+      <view class="weui-label">电话</view>
+      0987654321
+    </view>
+  </view>
+
+  <view class="weui-cell weui-cell_input">
+    <view class="weui-cell_hd">
+      <view class="weui-label">地址</view>
+       广东省深圳市南山区深圳大学
+    </view>
+  </view>
+
+  <text class="text">宠物信息</text>
+
+  <view class="weui-cell weui-cell_input">
+    <view class="weui-cell_hd">
+      <view class="weui-label">类型</view> 
+      狗
+    </view>
+
+    <view class="weui-cell weui-cell_input">
+    <view class="weui-cell_hd">
+      <view class="weui-label">品种</view>
+      萨摩耶
+    </view>
+  </view>
+
+    <view class="weui-cell weui-cell_input">
+    <view class="weui-cell_hd">
+      <view class="weui-label">备注</view>
+      爱喝水，请多给它喝点儿水~
+    </view>
+  </view>
+
+  </view>
+</view>
+
+<image src="/images/dog.jpg" style="width:450rpx; height:450rpx;margin-left: 20%;"  mode="aspectFill"></image>
+
+<view style="padding: 100rpx;"></view>

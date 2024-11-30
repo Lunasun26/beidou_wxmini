@@ -1,0 +1,71 @@
+<!--pages/user/index.wxml-->
+<!--
+  用户个人页面
+-->
+
+<!-- 头像昵称 -->
+<view class="text-center mar-tb-0">
+
+<!--未登录-->
+<view wx:if="{{hasUserInfo==false}}" class="noLoginButton">
+<button bindtap="userLogin">登录</button>
+</view>
+
+<!--已登录-->
+<view wx:else>
+<view class="user-img">
+  <image src="{{userInfo.avatarUrl}}"></image>
+</view>
+<view class="user-name">
+  {{userInfo.nickName}}
+</view>
+</view>
+
+</view>
+
+<!-- 未登录 -->
+<view wx:if="{{hasUserInfo==false}}" class="noLoginText">
+请登录后查看相关信息~
+</view>
+
+<!-- 已登录-->
+<view wx:else>
+
+
+
+<!-- 工具与服务 -->
+
+
+<view class="text-serve" >
+  <text class="text" style="margin-top:3%; margin-bottom: 8%;">服务中心</text>
+
+  <view class="serve">
+
+    <navigator class="mar-30" style="width: 35%;" url="/pages/chooseSchool/index">
+      <view style="text-align: center;" >
+        <image class="icon" src="/images/user/地址.png"></image>
+      </view>
+      <view style="white-space: nowrap; text-align: center; margin-top: 4%; font-size: 28rpx;">地址管理</view>
+    </navigator>
+
+    <navigator class="mar-30" style="width: 30%;" url="/pages/user/help-center/index">
+      <view style="text-align: center;">
+        <image class="icon" src="/images/user/客服.png"></image>
+      </view>
+      <view style="white-space: nowrap; text-align: center; margin-top: 4%; font-size: 28rpx;" >帮助中心</view>
+    </navigator>
+
+    <navigator class="mar-30" style="width: 35%;" url="/pages/user/business/index">
+      <view style="text-align: center;">
+        <image class="icon" src="/images/user/店铺.png"></image>
+      </view>
+      <view style="white-space: nowrap; text-align: center; margin-top: 4%; font-size: 28rpx;">合作联系</view>
+    </navigator>
+
+  </view>
+
+</view>
+
+</view>
+
+<view style="padding: 150rpx;"></view>

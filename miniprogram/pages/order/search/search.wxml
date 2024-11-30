@@ -1,0 +1,55 @@
+<!--pages/search/index.wxml-->
+
+<!--搜索框 -->
+<view class="weui-search-bar">
+
+<view class="weui-search-bar__form">
+
+<!--点击之后，出现input框 -->
+<view class="weui-search-bar__box">
+ <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+ <input type="text" class="weui-search-bar__input" placeholder="请输入订单关键字" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" bindconfirm="searchData"/>
+
+<!--输入款字数大于0，则显示清除按钮 -->
+ <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+ <icon type="clear" size="14" bindtap="clearInput"></icon>
+ </view>
+</view>
+
+<!--没点击之前，只是一些文字和图标 -->
+<label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
+ <icon class="weui-icon-search" type="search" size="14"></icon>
+ <view class="weui-search-bar__text">搜索</view>
+</label>
+
+</view>
+
+<!--动态出现的“搜索”键 -->
+<view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="searchData">搜索</view>
+
+</view>
+
+<!-- 标识语句 -->
+<view class="tips-text" wx:if="{{listdata.length>0}}">"{{inputVal}}"相关订单如下：</view>
+<view class="tips-none" wx:if="{{none.length>0 || (inputVal.length>0 && !listdata.length)}}">{{none}}</view>
+
+<!-- 列表 -->
+<view>
+ <block style="display: flex;">
+
+   <navigator url="{{url + item._id}}" wx:for="{{listdata}}" wx:key="_id" data-item="{{item.content}}" bindtap="sendContent"
+     class="box padding-20 pad">
+     <view class="detail"><text>运输编号: {{item.code}}</text></view>
+      <view class="title">{{item.status}}</view>
+      <view class="detail">
+        <text>宠物类别:  {{item.type}}</text>
+        <text>发箱人:  {{item.dname}}</text>
+        <text>签收人:  {{item.rname}}</text>
+        <text>发箱地址:  {{item.daddress}}</text>
+        <text>收箱地址:  {{item.raddress}}</text>
+        </view>
+   </navigator>
+ </block>
+</view>
+
+<view style="padding: 30rpx 0;"></view>

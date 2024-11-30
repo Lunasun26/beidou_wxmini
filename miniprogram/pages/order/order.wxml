@@ -1,0 +1,95 @@
+<!--pages/orders/market/manage.wxml-->
+
+<!-- 顶栏（搜索+下单） -->
+<view class="top-bar">
+
+<view class="search" bindtap="toSearch">
+  <icon type="search" size="14"></icon>
+  <text space="ensp">{{searchText}}</text>
+</view>
+
+<button class="publish" size="mini" bindtap="toPublish">　下单　</button>
+
+</view>
+
+<!--订单管理 -->
+<view class="fleamarket">
+
+  <view class="fleamarket-num"> 
+
+    <view class="user-publish">
+      <!-- <view class="num">{{publishNum}}</view> -->
+      <view class="num">2</view>
+      <view>我寄出的</view>
+    </view>
+
+  <view class="user-take">
+      <!-- <view class="num">{{takeNum}}</view> -->
+      <view class="num">3</view>
+      <view>我签收的</view>
+    </view>
+
+  </view>
+
+</view>
+
+<!-- 滑动导航栏 -->
+<scroll-view scroll-x class="scroll-bar" scroll-with-animation scroll-left="{{scrollLeft}}rpx">
+ 
+ <view class="scroll-item" wx:for="{{tabs}}" wx:key="id" bindtap="tabSelect" data-id="{{index}}">
+   <view class="scroll-text {{index==tabCur?'scroll-on':''}}">{{item.name}}</view>
+ </view>
+
+</scroll-view>
+
+<!-- 列表 -->
+<view>
+ <block wx:if="{{tabCur==0}}" style="display: flex;">
+
+   <navigator url="./detail/detail" wx:for="{{listdata}}" wx:key="_id" data-item="{{item.content}}" 
+     class="box padding-20 pad">
+     <view class="detail"><text>运输编号: {{item.code}}</text></view>
+      <view class="title">{{item.status}}</view>
+      <view class="detail">
+        <text>宠物类别:  {{item.type}}</text>
+        <text>发箱人:  {{item.dname}}</text>
+        <text>签收人:  {{item.rname}}</text>
+        <text>发箱地址:  {{item.daddress}}</text>
+        <text>收箱地址:  {{item.raddress}}</text>
+        </view>
+   </navigator>
+ </block>
+ 
+ <block wx:if="{{tabCur==1}}" style="display: flex;">
+
+<navigator url="./detail/detail" wx:for="{{listdata1}}" wx:key="_id" data-item="{{item.content}}" 
+  class="box padding-20 pad">
+  <view class="detail"><text>运输编号: {{item.code}}</text></view>
+      <view class="title">{{item.status}}</view>
+      <view class="detail">
+        <text>宠物类别:  {{item.type}}</text>
+        <text>发箱人:  {{item.dname}}</text>
+        <text>签收人:  {{item.rname}}</text>
+        <text>发箱地址:  {{item.daddress}}</text>
+        <text>收箱地址:  {{item.raddress}}</text>
+     </view>
+</navigator>
+</block>
+<block wx:if="{{tabCur==2}}" style="display: flex;">
+
+<navigator url="./detail/detail" wx:for="{{listdata2}}" wx:key="_id" data-item="{{item.content}}"
+  class="box padding-20 pad">
+  <view class="detail"><text>运输编号: {{item.code}}</text></view>
+      <view class="title">{{item.status}}</view>
+      <view class="detail">
+        <text>宠物类别:  {{item.type}}</text>
+        <text>发箱人:      {{item.dname}}</text>
+        <text>签收人:      {{item.rname}}</text>
+        <text>发箱地址:  {{item.daddress}}</text>
+        <text>收箱地址:  {{item.raddress}}</text>
+     </view>
+</navigator>
+</block>
+</view>
+
+<view style="padding: 30rpx 0;"></view>

@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/main/main",
+    "pages/order/order",
+    "pages/user/user",
+    "pages/order/detail/detail",
+    "pages/order/express/express",
+    "pages/order/search/search"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff2f3",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#999",
+    "backgroundColor": "#ffffff",
+    "position": "bottom",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/main/main",
+        "text": "宠物箱",
+        "iconPath": "images/tab/快递.png",
+        "selectedIconPath": "images/tab/快递 (1).png"
+      },
+      {
+        "pagePath": "pages/order/order",
+        "text": "订单",
+        "iconPath": "images/tab/订单.png",
+        "selectedIconPath": "images/tab/订单 (1).png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "个人",
+        "iconPath": "images/tab/我的.png",
+        "selectedIconPath": "images/tab/我的 (1).png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

@@ -1,0 +1,36 @@
+ 
+  <!-- 数据 -->
+  <view class="count">
+    <view class="cell">{{datanum1}}°C<text>当前箱内温度</text></view>
+    <view  class="cell">{{datanum2}}%<text>当前箱内湿度</text></view>
+  </view>
+
+  <view style="background-color: #ffffff; border-radius: 82rpx 82rpx 0 0;">
+
+  <!-- 记录 -->
+<view style="margin-top: 9%;">
+  <view  class="weui">
+      <view class="weui-cell_bd">温度记录</view>
+  </view>
+  <view class="charts-box">
+    <qiun-wx-ucharts 
+    type="area"
+      opts="{{opts1}}"
+      chartData="{{chartData1}}"
+      type="column"
+      opts="{{opts}}"
+      chartData="{{chartData}}"
+    />
+  </view>
+  <view  class="weui">
+      <view class="weui-cell_bd">湿度记录</view>
+  </view>
+  <view class="charts-box">
+    <qiun-wx-ucharts 
+      type="area"
+      opts="{{opts1}}"
+      chartData="{{chartData1}}"
+    />
+  </view>
+</view>
+</view>
